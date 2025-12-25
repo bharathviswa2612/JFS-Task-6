@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Identity Card Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .card {
+            width: 350px;
+            height: 220px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 50px auto;
+            background-color: #ffffff;
+        }
+
+        .card h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 8px;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h3>Identity Card</h3>
+
+    <form>
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name">
+        </div>
+
+        <div class="form-group">
+            <label for="idno">Aadhar / PAN Number</label>
+            <input type="text" id="idno" placeholder="Enter ID number">
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" placeholder="Male / Female">
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
